@@ -19,13 +19,13 @@
     };
 
     behaviors {
-        new_behavior: new_behavior {
+        bscp_del: bscp_del {
             compatible = "zmk,behavior-mod-morph";
-            label = "NEW_BEHAVIOR";
-            bindings = <&kp BACKSPACE>, <&kp DEL>;
+            label = "BSCP_DEL";
+            bindings = <&kp LS(BACKSPACE)>, <&kp DEL>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
